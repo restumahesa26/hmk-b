@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+    img {
+        max-height: 60px;
+    }
+    .nav-link {
+        color: #071C4D !important;
+        &:hover {
+            color: #fff !important;
+            background-color: #1A3767;
+            border-radius: 5px;
+        }
+        &:active {
+            color: #000 !important;
+        }
+    }
+    .btn-navbar-right {
+        margin-top: -16px !important;
+        margin-bottom: -13px !important;
+        margin-right: -16px !important;
+    
+        height: 90px;
+        border-radius: 0;
+    }
+    .btn-login {
+        color: #fff;
+        background-color:#294A80;
+        font-family: 'Pacifico', cursive;
+        &:hover {
+            background-color: #1A3767;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .text-header {
+        font-size: 3em;
+    }
+    .img-card-2 {
+        height: 160px;
+        width: 130px;
+    }
+    .anggota-card {
+        margin-top: -40px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .copyright {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-header {
+        font-size: 1.7em;
+    }
+    .img-card-2 {
+        height: 100px;
+        width: 80px;
+    }
+    .anggota-card {
+        margin-top: -40px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .copyright {
+        font-size: 0.5em;
+    }
+    .follow-us {
+        margin-top: 2px !important;
+    }
+    .bd {
+        border: 0px solid #fff !important;
+    }
+}
+
+header {
+    background-image: url('../images/tea.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 190px 0 145px;
+    margin-top: -90px;
+    .logo {
+        opacity: 0;
+        height: 220px;
+        transition: 2s all ease;
+    }
+    h1 {
+        color: #fff;
+        font-weight: bold;
+        font-family: 'Dancing Script', cursive;
+    }
+    #text-header {
+        opacity: 0;
+        transition: 2s all ease;
+    }
+    #text-header2 {
+        opacity: 0;
+        transition: 3s all ease;
+    }
+
+}
+
+.section-sejarah {
+    color: #000;
+    #sejarah {
+        opacity: 0;
+    }
+}
+
+.section-pengurus {
+    img {
+        height: 180px;
+        transition: transform .25s;
+        &:hover {
+            transform: scale(1.3) rotate(5deg);
+        }
+    }
+    .nama-pengurus {
+        font-size: 18px;    
+    }
+    #dpo1, #dpo2, #dpo3, #dpo4, #dpo5, #ketua, #wakil-ketua, #sekretaris, #bendahara, #sejarah {
+        opacity: 0;
+    }
+}
+
+.section-divisi {
+    .btn-divisi {
+        background-color: #294A80 !important;
+        color: #fff;
+        &:hover {
+            background-color: #1A3767 !important;
+        }
+    }
+    .img-card {
+        height: 250px;
+    }
+    .img-card-top {
+        height: 150px;
+    }
+}
+
+#back-top {
+    display: none;
+}
+
+footer {
+    .logo-footer {
+        height: 165px;
+    }
+    .nav-link {
+        padding: 0px;
+        &:hover {
+            color: #071C4D !important;
+        }
+    }
+    .address {
+        color: #fff;
+        font-size: 22px;
+    }
+    .address-add {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <script defer src="frontend/libraries/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="frontend/images/logo.png">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse font-weight-light" id="navb">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#pengurus" class="nav-link" id="pengurus_a">Kepengurusan</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#divisi" class="nav-link" id="divisi_a">Divisi</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="doku.html" class="nav-link" id="doku_a">Dok. Kegiatan</a>
+                    </li>
+                </ul>
+                <!-- Mobile Button -->
+                <form class="form-inline d-sm-block d-md-none">
+                    <button class="btn btn-login my-2 my-sm-0">
+                        Masuk
+                    </button>
+                </form>
+                <!-- Desktop Button -->
+                <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                        Masuk
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Header -->
+    <header class="text-center">
+        <img src="frontend/images/logo.png" class="logo" id="logo2">
+        <h1 class="text-header" id="text-header">HIMPUNAN MAHASISWA</h1>
+        <h1 class="text-header" id="text-header2">KERINCI - BENGKULU</h1>
+    </header>
+    <!-- End Header -->
+
+    <main>
+        <section class="section-sejarah mt-4">
+            <div class="container  border-bottom border-info pb-3">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>Tentang HMK-B</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-justify pt-2">
+                        <p id="sejarah">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quidem,
+                            tempore nulla eius
+                            eveniet est, vel, inventore nobis optio unde repellat aliquid perspiciatis ea necessitatibus
+                            quia modi libero placeat facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dicta beatae labore voluptatibus hic distinctio id iure voluptas praesentium officiis at
+                            nisi, architecto non modi harum nobis similique! Inventore, praesentium impedit! Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Neque, et blanditiis dolorem libero illum
+                            officia enim recusandae quam maxime repellat ad dolorum, quisquam assumenda eos ex adipisci
+                            reiciendis laudantium magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Recusandae, assumenda eos. Quis deserunt corporis est, amet incidunt ducimus veritatis ullam
+                            odit voluptatem, eligendi id tempora, error ipsam ut similique officia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-pengurus mt-4" id="pengurus">
+            <div class="container border-bottom border-info pb-3">
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-12">
+                        <h2>Struktur Kepengurusan</h2>
+                    </div>
+                </div>
+                <div class="row text-center justify-content-center pt-3">
+                    <div class="col-md-12 pb-2">
+                        <h5>DPO</h5>
+                    </div>
+                </div>
+                <div class="row text-center justify-content-center border-bottom border-dark">
+                    <div class="col-md-2" id="dpo1">
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                    <div class="col-md-2" id="dpo2">
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                    <div class="col-md-2" id="dpo3">
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                    <div class="col-md-2" id="dpo4">
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                    <div class="col-md-2" id="dpo5">
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                </div>
+                <div class="row text-center justify-content-center pt-3 border-bottom border-dark">
+                    <div class="col-md-4" id="ketua">
+                        <h5>Ketua</h5>
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                    <div class="col-md-4" id="wakil-ketua">
+                        <h5>Wakil Ketua</h5>
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                </div>
+                <div class="row text-center justify-content-center pt-3">
+                    <div class="col-md-6" id="sekretaris">
+                        <h5>Sekretaris</h5>
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                    <div class="col-md-6" id="bendahara">
+                        <h5>Bendahara</h5>
+                        <img src="frontend/images/foto.jpeg" alt="" class="rounded-circle">
+                        <p class="nama-pengurus">Fulan Bin Fulan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-divisi mt-4">
+            <div class="container pb-3" id="divisi">
+                <div class="row text-center">
+                    <div class="col-md-12 ">
+                        <h4>Divisi</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 border-right border-bottom border-primary" id="kwu">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="frontend/images/supermarket.png" class="img-card-top" alt="...">
+                            </div>
+                            <h5 class="card-title text-center">Kewirausahaan</h5>
+                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                                make up
+                                the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-divisi" data-toggle="modal"
+                                    data-target=".kewirausahaan">View Details</button>
+                            </div>
+                            <div class="modal fade kewirausahaan" tabindex="-1" role="dial">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="row">
+                                            <div class="col-sm-8 col-md-4 py-3 px-5 text-center">
+                                                <img src="frontend/images/foto.jpeg" alt=""
+                                                    class="card-img-top img-card-2">
+                                                <h5 class="pt-2">Fulan Bin Fulan</h5>
+                                                <p>Ketua</p>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 py-3 px-5 text anggota-card">
+                                                <h5>Anggota :</h5>
+                                                <ol>
+                                                    <li>Aqil</li>
+                                                    <li>Azura Fitria</li>
+                                                    <li>Fauzan Urdian Saputra</li>
+                                                    <li>Farhan</li>
+                                                </ol>
+                                                <h5 class="pt-2">Program Kerja :</h5>
+                                                <ul>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 border-bottom border-primary" id="psdm">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="frontend/images/person.png" class="img-card-top" alt="...">
+                            </div>
+                            <h5 class="card-title text-center">PSDM</h5>
+                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                                make up
+                                the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-divisi" data-toggle="modal"
+                                    data-target=".psdm">View Details</button>
+                            </div>
+                            <div class="modal fade psdm" tabindex="-1" role="dial">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="row">
+                                            <div class="col-sm-8 col-md-4 py-3 px-5 text-center">
+                                                <img src="frontend/images/foto.jpeg" alt=""
+                                                    class="card-img-top img-card-2">
+                                                <h5 class="pt-2">Fulan Bin Fulan</h5>
+                                                <p>Ketua</p>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 py-3 px-5 text anggota-card">
+                                                <h5>Anggota :</h5>
+                                                <ol>
+                                                    <li>Ahmad Sanusi</li>
+                                                    <li>Atika Ledia Anggraini</li>
+                                                    <li>Adzkianda</li>
+                                                    <li>Voni Fazira</li>
+                                                </ol>
+                                                <h5 class="pt-2">Program Kerja :</h5>
+                                                <ul>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 border-left border-bottom border-primary" id="kestari">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="frontend/images/letter.png" class="img-card-top" alt="...">
+                            </div>
+                            <h5 class="card-title text-center">Kestari</h5>
+                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                                make up
+                                the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-divisi" data-toggle="modal"
+                                    data-target=".kestari">View Details</button>
+                            </div>
+                            <div class="modal fade kestari" tabindex="-1" role="dial"
+                                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="row">
+                                            <div class="col-sm-8 col-md-4 py-3 px-5 text-center">
+                                                <img src="frontend/images/foto.jpeg" alt=""
+                                                    class="card-img-top img-card-2">
+                                                <h5 class="pt-2">Fulan Bin Fulan</h5>
+                                                <p>Ketua</p>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 py-3 px-5 text anggota-card">
+                                                <h5>Anggota :</h5>
+                                                <ol>
+                                                    <li>Dede Irawan Saputra</li>
+                                                    <li>Fahri</li>
+                                                    <li>Ade</li>
+                                                </ol>
+                                                <h5 class="pt-2">Program Kerja :</h5>
+                                                <ul>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 border-right border-primary" id="minbak">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="frontend/images/trophy.png" class="img-card-top" alt="...">
+                            </div>
+                            <h5 class="card-title text-center">Minat & Bakat</h5>
+                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                                make up
+                                the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-divisi" data-toggle="modal"
+                                    data-target=".minbak">View Details</button>
+                            </div>
+                            <div class="modal fade minbak" tabindex="-1" role="dial">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="row">
+                                            <div class="col-sm-8 col-md-4 py-3 px-5 text-center">
+                                                <img src="frontend/images/foto.jpeg" alt=""
+                                                    class="card-img-top img-card-2">
+                                                <h5 class="pt-2">Fulan Bin Fulan</h5>
+                                                <p>Ketua</p>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 py-3 px-5 anggota-card text">
+                                                <h5>Anggota :</h5>
+                                                <ol>
+                                                    <li>Mutia Asnimulia</li>
+                                                    <li>Rahmat Yoranda Saputra</li>
+                                                    <li>Fernando</li>
+                                                    <li>Sukron Putra Adijaya</li>
+                                                    <li>Rahma</li>
+                                                </ol>
+                                                <h5 class="pt-2">Program Kerja :</h5>
+                                                <ul>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="rohani">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="frontend/images/mosque.png" class="img-card-top" alt="...">
+                            </div>
+                            <h5 class="card-title text-center">Kerohanian</h5>
+                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                                make up
+                                the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-divisi" data-toggle="modal"
+                                    data-target=".kerohanian">View Details</button>
+                            </div>
+                            <div class="modal fade kerohanian" tabindex="-1" role="dial">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="row">
+                                            <div class="col-sm-8 col-md-4 py-3 px-5 text-center">
+                                                <img src="frontend/images/foto.jpeg" alt=""
+                                                    class="card-img-top img-card-2">
+                                                <h5 class="pt-2">Fulan Bin Fulan</h5>
+                                                <p>Ketua</p>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 py-3 px-5 anggota-card text">
+                                                <h5>Anggota :</h5>
+                                                <ol>
+                                                    <li>Boby</li>
+                                                    <li>Apipah</li>
+                                                    <li>Yolanda</li>
+                                                    <li>Fauziah</li>
+                                                    <li>Tonil Aulia Begawan</li>
+                                                    <li>Feza Yahya Alqordhawi</li>
+                                                </ol>
+                                                <h5 class="pt-2">Program Kerja :</h5>
+                                                <ul>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 border-left border-primary" id="infokom">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="frontend/images/computer.png" class="img-card-top" alt="...">
+                            </div>
+                            <h5 class="card-title text-center">Infokom</h5>
+                            <p class="card-text text-justify">Some quick example text to build on the card title and
+                                make up
+                                the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-divisi" data-toggle="modal"
+                                    data-target=".infokom">View Details</button>
+                            </div>
+                            <div class="modal fade infokom" tabindex="-1" role="dial">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-md-4 py-3 px-5 text-center">
+                                                <img src="frontend/images/foto.jpeg" alt=""
+                                                    class="card-img-top img-card-2">
+                                                <h5 class="pt-2 text-center">Fulan Bin Fulan</h5>
+                                                <p>Ketua</p>
+                                            </div>
+                                            <div class="col-sm-12 col-md-8 py-3 px-5 anggota-card text">
+                                                <h5>Anggota :</h5>
+                                                <ol>
+                                                    <li>Mufti Restu Mahesa</li>
+                                                    <li>Rixa Aini Cahya</li>
+                                                    <li>Ikhlas Fadli</li>
+                                                    <li>Reza</li>
+                                                </ol>
+                                                <h5 class="pt-2">Program Kerja :</h5>
+                                                <ul>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                    <li>Apa Lah Itu</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container-fluid text-right pb-3" id="back-top">
+        <button class=" font-weight-bold text-white bg-dark back-top rounded-lg">Back To Top</button>
+    </div>
+
+    <footer class="bg-dark border-top border-info ">
+        <div class="container">
+            <div class="row justify-content-center my-4">
+                <div class="col-md-4 text-center d-none d-md-block">
+                    <img src="frontend/images/logo.png" class="logo-footer">
+                </div>
+                <div class="col-md-4 mt-2">
+                    <h6 class="address">Address</h6>
+                    <p class="my-0 address-add text-white-50">Bengkulu</p>
+                    <p class="my-0 address-add text-white-50">Unib Belakang</p>
+                    <p class="my-0 address-add text-white-50">Kelurahan Kandang Limun</p>
+                    <p class="my-0 address-add text-white-50">Kecamatan Muara bangka Hulu</p>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <h6 class="address">Our Media</h6>
+                    <a href="#" class="nav-link text-info">Facebook</a>
+                    <a href="#" class="nav-link text-info">Instagram</a>
+                    <a href="#" class="nav-link text-info">Whatsapp</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center py-2">
+                <div class="col-auto text-white font-weight-light copyright">
+                    2020 Copyright HMK-B • All rights reserved • Design and Developed By HMK-B
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+<script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+<script src="frontend/script/script.js"></script>
+
+</html>
