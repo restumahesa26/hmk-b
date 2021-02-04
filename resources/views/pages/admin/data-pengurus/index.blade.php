@@ -55,7 +55,7 @@
                 <tr class="text-center">
                     <td class="mb-2">{{ $no }}</td>
                     <td>
-                        <img src="{{ asset('storage/images/foto-pengurus/'.$item-> fotoProfil) }}"
+                        <img src="{{ asset('storage/images/foto-pengurus/'.$item-> foto) }}"
                             style="width:200px; height:200px;" class="img-thumbnail rounded-circle">
                     </td>
                     <td class="mb-2">{{ $item-> nama }}</td>

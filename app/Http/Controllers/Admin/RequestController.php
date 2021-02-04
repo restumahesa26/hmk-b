@@ -190,7 +190,6 @@ class RequestController extends Controller
             $foto = $data-> foto;
             $a = $data-> created_at;
             $b = $data-> updated_at;
-            $data->delete();
     
             $dataAnggota = new DataAnggotaAktif();
             $dataAnggota->nama = $nama;
@@ -213,6 +212,7 @@ class RequestController extends Controller
             $dataAnggota->created_at = $a;
             $dataAnggota->updated_at = $b;
             $dataAnggota->save();
+            $data->delete();
     
             Storage::move('public/images/foto-request/'.$foto  , 'public/images/foto-anggota/'.$foto);
             $filename  = ('public/images/foto-request/').$foto;
@@ -252,7 +252,6 @@ class RequestController extends Controller
             $foto = $data-> foto;
             $a = $data-> created_at;
             $b = $data-> updated_at;
-            $data->delete();
     
             $dataAlumni = new DataAlumni();
             $dataAlumni->nama = $nama;
@@ -275,6 +274,7 @@ class RequestController extends Controller
             $dataAlumni->created_at = $a;
             $dataAlumni->updated_at = $b;
             $dataAlumni->save();
+            $data->delete();
     
             Storage::move('public/images/foto-request/'.$foto  , 'public/images/foto-alumni/'.$foto);
             $filename  = ('public/images/foto-request/').$foto;

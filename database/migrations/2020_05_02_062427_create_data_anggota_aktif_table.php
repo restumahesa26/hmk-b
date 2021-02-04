@@ -16,7 +16,7 @@ class CreateDataAnggotaAktifTable extends Migration
         Schema::create('data_anggota_aktif', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
-            $table->string('ttl');
+            $table->string('tempat_lahir');
             $table->integer('jenis_kelamin');
             $table->string('agama');
             $table->string('alamat_asal');

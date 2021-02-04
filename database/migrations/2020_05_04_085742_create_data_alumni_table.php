@@ -16,7 +16,7 @@ class CreateDataAlumniTable extends Migration
         Schema::create('data_alumni', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
-            $table->string('ttl');
+            $table->string('tempat_lahir');
             $table->string('jenis_kelamin');
             $table->string('agama');
             $table->string('alamat_asal');

@@ -51,7 +51,7 @@
                 $dpoo++;
                 @endphp
                 <div class="col-md-2" id="dpo{{ $dpoo }}">
-                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> fotoProfil) }}" alt=""
+                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> foto) }}" alt=""
                         class="rounded-circle">
                     <p class="nama-pengurus">{{ $item -> nama }}</p>
                 </div>
@@ -61,7 +61,7 @@
                 <div class="col-md-4" id="ketua">
                     <h5>Ketua</h5>
                     @foreach ($ketua as $item)
-                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> fotoProfil) }}" alt=""
+                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> foto) }}" alt=""
                         class="rounded-circle">
                     <p class="nama-pengurus">
                         {{ $item-> nama }}
@@ -71,7 +71,7 @@
                 <div class="col-md-4" id="wakil-ketua">
                     <h5>Wakil Ketua</h5>
                     @foreach ($wakil_ketua as $item)
-                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> fotoProfil) }}" alt=""
+                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> foto) }}" alt=""
                         class="rounded-circle">
                     <p class="nama-pengurus">
                         {{ $item-> nama }}
@@ -83,7 +83,7 @@
                 <div class="col-md-6" id="sekretaris">
                     <h5>Sekretaris</h5>
                     @foreach ($sekretaris as $item)
-                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> fotoProfil) }}" alt=""
+                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> foto) }}" alt=""
                         class="rounded-circle">
                     <p class="nama-pengurus">
                         {{ $item-> nama }}
@@ -93,7 +93,7 @@
                 <div class="col-md-6" id="bendahara">
                     <h5>Bendahara</h5>
                     @foreach ($bendahara as $item)
-                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> fotoProfil) }}" alt=""
+                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> foto) }}" alt=""
                         class="rounded-circle">
                     <p class="nama-pengurus">
                         {{ $item-> nama }}

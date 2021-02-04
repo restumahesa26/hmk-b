@@ -72,7 +72,7 @@ class DataPengurusController extends Controller
                 DataPengurus::insert([
                     'nama' => $data['nama'],
                     'posisi' => $data['posisi'],
-                    'fotoProfil' => $imageNames,
+                    'foto' => $imageNames,
                 ]);
 
             return redirect() -> route('data-pengurus.index')->with('success' , 'Data Pengurus Berhasil Ditambah');
