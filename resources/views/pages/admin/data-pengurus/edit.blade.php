@@ -42,16 +42,6 @@
                     @enderror
                 </div>
                 <div class="form-group">
-                    <label for="">Posisi</label>
-                    <select name="posisi" id="" class="form-control">
-                        <option value="DPO">DPO</option>
-                        <option value="Ketua">Ketua</option>
-                        <option value="Wakil Ketua">Wakil Ketua</option>
-                        <option value="Sekretaris">Sekretaris</option>
-                        <option value="Bendahara">Bendahara</option>
-                    </select>
-                </div>
-                <div class="form-group">
                     <label for="posisi">Posisi</label>
                     <select id="posisi" name="posisi" class="form-control">
                         @if ($item-> posisi == 'DPO')
@@ -73,7 +63,7 @@
                 </div> 
                 <div class="form-group">
                     <label for="fotoProfil">Foto</label>
-                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> fotoProfil) }}" style="width:200px; height:200px;" class="img-thumbnail rounded-circle">
+                    <img src="{{ asset('storage/images/foto-pengurus/'. $item->foto) }}" style="width:200px; height:200px;" class="img-thumbnail rounded-circle">
                     <input id="fotoProfil" type="file" class="form-control @error('fotoProfil') is-invalid @enderror" name="fotoProfil">
                     @error('fotoProfil')
                         <span class="invalid-feedback" role="alert">

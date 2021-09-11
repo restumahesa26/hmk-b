@@ -57,12 +57,12 @@
                                 selected
                             @endif >Wakil Ketua</option>
                         @endif
-                        @if ($bendahara < 1)
+                        @if ($sekretaris < 1)
                             <option value="Sekretaris" @if ( old('posisi') == 'Sekretaris' )
                                 selected
                             @endif >Sekretaris</option>
                         @endif
-                        @if ($sekretaris < 1)
+                        @if ($bendahara < 1)
                             <option value="Bendahara" @if ( old('posisi') == 'Bendahara' )
                                 selected
                             @endif >Bendahara</option>

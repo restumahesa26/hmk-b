@@ -6,7 +6,7 @@
 
 @section('content')
 <main>
-    @foreach ($items as $item)
+    @forelse ($items as $item)
     <div class="container my-5">
         <div class="text-center">
             <h2>{{ $item-> judul }}</h2>
@@ -34,6 +34,12 @@
             </a>
         </div>
     </div>
-    @endforeach
+    @empty
+
+    <h3 class="text-center" style="padding-top: 200px; padding-bottom: 200px;">
+        Belum Ada Dokumentasi Kegiatan
+    </h3>
+
+    @endforelse
 </main>
 @endsection

@@ -75,7 +75,7 @@ class DataPengurusController extends Controller
                     'foto' => $imageNames,
                 ]);
 
-            return redirect() -> route('data-pengurus.index')->with('success' , 'Data Pengurus Berhasil Ditambah');
+                return redirect()->route('data-pengurus.index')->with('success' , 'Data Pengurus Berhasil Ditambah');
             }else{
                 return redirect()->back()->withInput()->with('error2', 'Seseorang Tidak Boleh Mengisi Dua Posisi');
             }
@@ -132,7 +132,7 @@ class DataPengurusController extends Controller
         if ($dpo < 5 || $check === null || strtolower($posisi) == strtolower($posisi2)) {
             if ($check2 === null || strtolower($nama) == strtolower($namaPengurus)) {
                 $imageName = null;
-                $filename  = ('public/images/foto-pengurus/').$item-> fotoProfil;
+                $filename  = ('public/images/foto-pengurus/').$item->foto;
                 $file = $request->file('fotoProfil');
         
                 if ($request->has('fotoProfil')) {
@@ -144,17 +144,17 @@ class DataPengurusController extends Controller
                     $thumbnailpath = public_path('storage/images/foto-pengurus/'.$imageNames);
                     $img = Image::make($thumbnailpath)->resize(280, 320)->save($thumbnailpath);
                 }else{
-                    $namaFile = $item-> fotoProfil;
+                    $namaFile = $item->foto;
                     $imageName = $namaFile;
                 }
         
                 $item->update([
                     'nama' => $data['nama'],
                     'posisi' => $data['posisi'],
-                    'fotoProfil' => $imageName
+                    'foto' => $imageName
                 ]);
         
-                return redirect() -> route('data-pengurus.index')->with('success2' , 'Data Pengurus Berhasil Diubah');
+                return redirect()->route('data-pengurus.index')->with('success2' , 'Data Pengurus Berhasil Diubah');
             }else{
                 return redirect()->back()->withInput()->with('error2', 'Seseorang Tidak Boleh Mengisi Dua Posisi');
             }

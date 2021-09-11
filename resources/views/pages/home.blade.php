@@ -51,7 +51,7 @@
                 $dpoo++;
                 @endphp
                 <div class="col-md-2" id="dpo{{ $dpoo }}">
-                    <img src="{{ asset('storage/images/foto-pengurus/'. $item-> foto) }}" alt=""
+                    <img src="{{ asset('storage/images/foto-pengurus/'. $item->foto) }}" alt=""
                         class="rounded-circle">
                     <p class="nama-pengurus">{{ $item -> nama }}</p>
                 </div>
